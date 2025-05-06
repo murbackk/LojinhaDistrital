@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento - Murbas Labs</title>
+  <link rel="stylesheet" href="style/pagamento.css">
+  <link rel="icon" href="ICfavicon.png">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- Cabeçalho com logo e botão de menu -->
+  <header>
+    <a href="index.html">
+      <img src="logoCom.png" alt="Logo Home" id="home-logo">
+    </a>
+    <div id="menu">
+      <button onclick="toggleMenu()">☰ Menu</button>
+    </div>
+  </header>
+
+  <!-- Menu de navegação -->
+  <nav id="menu-items" >
+    <a href="quemSomos.html">Quem Somos</a>
+    <a href="redes.html">Redes</a>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h2>Pagamento</h2>
+
+    <div class="pagamento-options">
+      <button id="pix-option">Pagar com Pix</button>
+      <button id="cartao-option">Pagar com Cartão</button>
+    </div>
+
+    <section id="pix-qrcode" style="display:none;">
+      <h3>QR Code Pix:</h3>
+      <div id="qrcode"></div>
+      <p id="codigo-pix" style="word-wrap: break-word;"></p>
+    </section>
+
+    <section id="form-cartao" style="display:none;">
+      <h3>Digite o número do cartão:</h3>
+      <input type="text" id="numero-cartao" placeholder="Número do Cartão">
+      <button onclick="validarCartao()">Validar Cartão</button>
+      <p id="cartao-status"></p>
+    </section>
+
+    <button id="pagamento-realizado" style="display:none;" onclick="window.location.href='index.html'">
+      Pagamento Realizado
+    </button>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <img src="home-logo.png" alt="Logo Rodapé">
+    
+  </footer>
+
+  <script src="pagamento.js"></script>
+
+</body>
+</html>

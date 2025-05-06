@@ -184,3 +184,77 @@ body {
   }
   
   
+
+
+/* Ajustes para responsividade */
+body {
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header, footer {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#home-logo {
+  max-width: 200px;
+  width: 30vw;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#menu {
+  position: static;
+  text-align: right;
+  margin-left: auto;
+}
+
+/* Menu responsivo */
+#menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #menu-items {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main {
+    padding: 10px;
+  }
+}

@@ -1,6 +1,6 @@
 /* Plano de fundo do site */
 body {
-  background-image: url('../img/background.png'); /* Imagem de fundo personalizada */
+  background-image: url('../../img/background.png'); /* Imagem de fundo personalizada */
   background-size: 140%;                  /* A imagem será aumentada 140% do tamanho original */
   background-position: center;            /* Centraliza a imagem */
   background-repeat: no-repeat;           /* Não repete a imagem */

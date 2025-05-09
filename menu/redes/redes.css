@@ -1,6 +1,6 @@
 /* Define estilo geral do corpo */
 body {
-  background-image: url('/img/background.png');
+  background-image: url('../img/background.png');
   background-size: 140%;
   background-position: center;
   background-repeat: no-repeat;

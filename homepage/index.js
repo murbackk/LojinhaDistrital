@@ -8,7 +8,7 @@ const slides = [
     descricao: "Leia as novidades e informes importantes deste mês.",
     botao: {
       texto: "Ver Comunicado",
-      link: "comunicado.pdf"
+      link: "homepage/comunicado.pdf" // Caminho corrigido
     }
   },
   {
@@ -16,6 +16,7 @@ const slides = [
     descricao: "Em breve, conheça os projetos em andamento no nosso distrito."
   }
 ];
+
 let current = 0;
 
 function updateSlide() {
@@ -46,7 +47,7 @@ function updateSlide() {
     const btn = document.createElement("button");
     btn.textContent = "Acessar Catálogo";
     btn.classList.add("catalogo-btn");
-    btn.onclick = () => window.location.href = "catalogo.html";
+    btn.onclick = () => window.location.href = "/catalogo/catalogo.html";
     catalogoBtnContainer.appendChild(btn);
   }
 
@@ -54,7 +55,7 @@ function updateSlide() {
     const btn = document.createElement("button");
     btn.textContent = slide.botao.texto;
     btn.classList.add("catalogo-btn");
-    btn.onclick = () => window.open(slide.botao.link, "_blank");
+    btn.onclick = () => window.open(slide.botao.link, "_blank"); // Usando link do objeto
     catalogoBtnContainer.appendChild(btn);
   }
 
@@ -72,9 +73,6 @@ function updateSlide() {
   });
 }
 
-
-
-
 function nextSlide() {
   current = (current + 1) % slides.length;
   updateSlide();
@@ -91,5 +89,3 @@ function toggleMenu() {
 }
 
 updateSlide();
-
-

@@ -1,5 +1,5 @@
 body {
-    background-image: url('background.png');
+    background-image: url('/img/background.png');
     background-size: 140%;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,13 +8,20 @@ body {
   header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
-    background-color: #020c2d; /* ou transparente, se quiser */
-    height: 70px; /* altura opcional */
+    background-color: #020c2d;
+    height: 70px;
+    position: relative; /* importante para posicionamentos internos, se precisar */
   }
   
-  .icon {
-    height: 50px; /* ou ajuste conforme o tamanho da sua logo */
+  #menu {
+    margin-left: auto;
+  }
+  
+  #home-logo {
+    height: 50px;
+    width: auto;
   }
 
   #menu {
@@ -203,10 +210,6 @@ header, footer {
   justify-content: space-between;
 }
 
-#home-logo {
-  max-width: 200px;
-  width: 30vw;
-}
 
 .carousel {
   width: 100%;
@@ -218,11 +221,7 @@ main {
   box-sizing: border-box;
 }
 
-#menu {
-  position: static;
-  text-align: right;
-  margin-left: auto;
-}
+
 
 /* Menu responsivo */
 #menu-items {

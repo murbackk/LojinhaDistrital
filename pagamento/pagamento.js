@@ -103,3 +103,7 @@
       status.style.color = "red";
     }
   }
+  window.onload = () => {
+    const valor = localStorage.getItem("valorTotalCarrinho") || "0.00";
+    document.getElementById("valor-pix").textContent = `Valor: R$ ${valor}`;
+  };

@@ -1,6 +1,5 @@
 /* estrutura base do css do site */
 body {
-  background-image: url('background.png');
   background-size: 140%;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,8 +18,8 @@ header {
   height: 70px;
 }
 
-.icon {
-  height: 50px;
+#home-logo {
+  height: 50px;                           /* Altura fixa para a logo */
 }
 
 #menu {
@@ -193,7 +192,7 @@ body {
   background-image: none;
 }
 
-main h2, main h3 {
+main h1, main h2, main h3 {
   color: #0a2e66;
 }
 

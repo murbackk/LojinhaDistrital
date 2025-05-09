@@ -1,6 +1,6 @@
 /* Plano de fundo do site */
 body {
-  background-image: url('background.png'); /* Imagem de fundo personalizada */
+  background-image: url('/img/background.png'); /* Imagem de fundo personalizada */
   background-size: 140%;                  /* A imagem será aumentada 140% do tamanho original */
   background-position: center;            /* Centraliza a imagem */
   background-repeat: no-repeat;           /* Não repete a imagem */
@@ -23,10 +23,12 @@ header {
 
 /* Logo do cabeçalho */
 #home-logo {
-  height: 50px;                           /* Altura fixa para a logo */
+  height: 50px;
+  width: auto;
 }
 
-/* Estilização do botão do menu (hambúrguer ☰) */
+
+
 #menu {
   position: absolute;                    
   top: 30px;                              /* Posiciona o menu no topo */
@@ -108,7 +110,7 @@ footer div {
 
 /* Conteúdo principal centralizado */
 main {
-  padding: 80px 20px; /* espaço para não ficar encostado no topo */
+  padding: 10px 20px; /* espaço para não ficar encostado no topo */
   min-height: calc(100vh - 140px); /* altura da tela menos header e footer */
   display: flex;
   flex-direction: column;
@@ -120,7 +122,7 @@ main {
 main h1 {
   font-size: 48px;             /* Tamanho grande do título */
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Texto da seção */

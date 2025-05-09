@@ -8,7 +8,7 @@ body {
   font-family: Helvetica, sans-serif;     /* Fonte principal usada no site */
   margin: 0;                              
   padding: 0;
-  text-align: center;                     /* Centraliza todos os textos por padrão */
+  text-align: center;                     /* Centraliza todos os textos padrão */
 }
 
 /* Cabeçalho fixo com logo e botão de menu */
